@@ -71,25 +71,26 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   <p class="date">2017-11-16</p>
 </section>
 
-<section><section id="remark" class="titleslide slide level1"><h1>Remark</h1></section><section class="slide level2">
+<section class="slide level2">
 
-<p>At this stage most of this presentation is a summary of Rachel Andrews <em>The New CSS Layout</em> <span class="citation" data-cites="andrew2017">(<a href="#/ref-andrew2017">2017</a>)</span>.</p>
+<p>This presentation is a stub. At this stage most of this presentation is a summary of Rachel Andrews <em>The New CSS Layout</em> <span class="citation" data-cites="andrew2017">(<a href="#/ref-andrew2017">2017</a>)</span>.</p>
 <figure>
 <img src="https://cdn.shopify.com/s/files/1/0051/7692/products/aba-cover-24_100x@3x.png?v=1501539522" title="Cover of Andrew&#39;s book" style="width:25.0%" />
 </figure>
-</section><section class="slide level2">
+</section>
+<section class="slide level2">
 
 <blockquote>
 <p>Don’t just ship the same old layouts with a different underlying technology. Discover what has changed about our medium. Don’t assume that we already know what the web is about to become. <span class="citation" data-cites="andrew2017">(<a href="#/ref-andrew2017">2017</a>, p. 7)</span></p>
 </blockquote>
-</section></section>
+</section>
 <section><section id="key-concepts" class="titleslide slide level1"><h1>Key concepts</h1></section><section id="separation-of-content-presentation-and-behavior" class="slide level2">
 <h2>Separation of content, presentation and behavior</h2>
 <figure>
 <img src="https://camo.githubusercontent.com/93685be46ccd43252b02a91c4a086723ae1e5d7b/687474703a2f2f646162316e6d736c76766e74702e636c6f756466726f6e742e6e65742f77702d636f6e74656e742f75706c6f6164732f323031342f30392f313430393732393735366373735f74687265652d6c61796572732e706e67" />
 </figure>
-</section><section id="responsive-layouts" class="slide level2">
-<h2>Responsive layouts</h2>
+</section><section class="slide level2">
+
 <figure>
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Responsive-web-design-devices.jpg" class="stretch" />
 </figure>
@@ -153,7 +154,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p><span class="citation" data-cites="font-face">(<span class="citeproc-not-found" data-reference-id="font-face"><strong>???</strong></span> - CSS | MDN)</span>(https://developer.mozilla.org/de/docs/Web/CSS/<span class="citation" data-cites="font-face">(<span class="citeproc-not-found" data-reference-id="font-face"><strong>???</strong></span>)</span> &quot;<span class="citation" data-cites="font-face">(<span class="citeproc-not-found" data-reference-id="font-face"><strong>???</strong></span>)</span> - CSS | MDN&quot;)</p>
 </section><section id="google-fonts" class="slide level2">
 <h2>Google fonts</h2>
-<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;https://fonts.googleapis.com/css?family=Merriweather&quot;</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="kw">&gt;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">
+<span class="kw">&lt;link</span><span class="ot"> href=</span><span class="st">&quot;https://fonts.googleapis.com/css?family=Merriweather&quot;</span>
+<span class="ot">                                                                                         rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="kw">&gt;</span>
+</code></pre></div>
 <p>CSS rules to specify these families:</p>
 <div class="sourceCode"><pre class="sourceCode css"><code class="sourceCode css">font-family<span class="dv">:</span> <span class="st">&#39;Merriweather&#39;</span>, serif;</code></pre></div>
 </section><section id="width-and-height" class="slide level2">
@@ -171,19 +175,40 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li>Short reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" title="CSS Properties Reference - CSS | MDN">CSS Properties Reference - CSS | MDN</a></li>
 <li>Complete reference (properties, selectors and keywords): <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" title="CSS reference - CSS | MDN">CSS reference - CSS | MDN</a></li>
 </ul>
-<p>&lt;! --</p>
 </section></section>
-<section><section id="responsive-design" class="titleslide slide level1"><h1>Responsive Design</h1></section><section class="slide level2">
+<section><section id="responsive-design-with-css" class="titleslide slide level1"><h1>Responsive Design with CSS</h1></section><section class="slide level2">
 
 <blockquote>
-<p>Responsive design threw everything up in the air again—not only did we need to create designs that used fluid percentage-based <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 11)</span></p>
+<p>Responsive design threw everything up in the air again—not only did we need to create designs that used fluid percentage-based grids, but we had to do so for a multitude of screen sizes. The techniques we had developed fell apart, and we had to revisit how we used floats and other parts of CSS to make layo ut easier. <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 11)</span></p>
 </blockquote>
 </section><section id="frameworks" class="slide level2">
 <h2>Frameworks</h2>
+<ul>
+<li><p><a href="https://getbootstrap.com/" title="Bootstrap · The most popular HTML, CSS, and JS library in the world.">Bootstrap · The most popular HTML, CSS, and JS library in the world.</a></p></li>
+<li><p><a href="https://foundation.zurb.com/" title="The most advanced responsive front-end framework in the world. | Foundation">The most advanced responsive front-end framework in the world. | Foundation</a></p></li>
+</ul>
+</section><section class="slide level2">
+
+<blockquote>
+<p>Any discussion of modern web design invariably comes around to the fact that all websites look more or less the same. The chief culprit behind these “identikit” websites are frameworks—Bootstrap and Foundation being key players. <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 21)</span></p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>But if all your front-end development is in your preferred framework, how long will it be until you can’t remember how to sit down in front of a text editor and build a layout from scratch? How do you find out about new approaches and new specifications? <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 25)</span></p>
+</blockquote>
+</section><section id="tools" class="slide level2">
+<h2>Tools</h2>
+<blockquote>
+<p>A preprocessor is a tool like Sass ( http://bkaprt.com/ncl/02-04/ ) or LESS ( http://bkaprt.com /ncl/02-05/ ): you write CSS in a language other than CSS, and then compile to CSS. A postprocessor happens after you get to CSS— Autoprefixer ( http://bkaprt.com/ncl/ 02-06/ ) is a good example of such a tool. Autoprefixer runs on your CSS file to add the required additional vendor prefixes for older browsers. <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 11)</span></p>
+</blockquote>
+</section><section class="slide level2">
+
+<blockquote>
+<p>Formal architectures and preprocessors alike have helped enable a trend in web design of breaking things down into smaller components. Brad Frost has described this technique as atomic design ( http://bkaprt.com/ncl/02-07/ ). Pattern library tools such as Pattern Lab ( http://bkaprt.com/ncl/02-08/ ) and Fractal ( http://bkaprt.com/ncl/02-09/ ) provide a framework for working with the hundreds of small components generated by working this way ( Fig 2.1 ). A related concept is that of a style guide or design system ( http://bkaprt. com/ncl/02-10/ ), a document detailing each component, separate from the complete pages that are ultimately generated from thes e pieces . <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 20)</span></p>
+</blockquote>
 </section></section>
-<section><section id="progressive-enhancement-1" class="titleslide slide level1"><h1>Progressive enhancement</h1></section><section id="progessive-enhancement-vs.-graceful-degradation" class="slide level2">
-<h2>Progessive enhancement vs. graceful degradation</h2>
-</section><section id="html-and-css-vs.-javascript" class="slide level2">
+<section><section id="progressive-enhancement-1" class="titleslide slide level1"><h1>Progressive enhancement</h1></section><section id="html-and-css-vs.-javascript" class="slide level2">
 <h2>HTML and CSS vs. JavaScript</h2>
 </section><section id="complexity-and-css-generation" class="slide level2">
 <h2>Complexity and CSS Generation</h2>
@@ -198,16 +223,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </section></section>
 <section><section id="browser-compatibility" class="titleslide slide level1"><h1>Browser compatibility</h1></section><section id="evergreen-browsers" class="slide level2">
 <h2>Evergreen Browsers</h2>
-</section><section id="tools" class="slide level2">
-<h2>Tools</h2>
-<blockquote>
-<p>A preprocessor is a tool like Sass ( http://bkaprt.com/ncl/02-04/ ) or LESS ( http://bkaprt.com /ncl/02-05/ ): you write CSS in a language other than CSS, and then compile to CSS. A postprocessor happens after you get to CSS— Autoprefixer ( http://bkaprt.com/ncl/ 02-06/ ) is a good example of such a tool. Autoprefixer runs on your CSS file to add the required additional vendor prefixes for older browsers. <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 11)</span></p>
-</blockquote>
-</section><section class="slide level2">
-
-<blockquote>
-<p>Formal architectures and preprocessors alike have helped enable a trend in web design of breaking things down into smaller components. Brad Frost has described this technique as atomic design ( http://bkaprt.com/ncl/02-07/ ). Pattern library tools such as Pattern Lab ( http://bkaprt.com/ncl/02-08/ ) and Fractal ( http://bkaprt.com/ncl/02-09/ ) provide a framework for working with the hundreds of small components generated by working this way ( Fig 2.1 ). A related concept is that of a style guide or design system ( http://bkaprt. com/ncl/02-10/ ), a document detailing each component, separate from the complete pages that are ultimately generated from thes e pieces . <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 20)</span></p>
-</blockquote>
 </section><section id="starting-with-the-content-not-with-the-container" class="slide level2">
 <h2>Starting with the content, not with the container</h2>
 <blockquote>
@@ -243,15 +258,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Safari and Edge update with operating system releases;</p>
 </blockquote>
 <p>November 13, 2017 23</p>
-</section></section>
-<section><section id="frameworks-1" class="titleslide slide level1"><h1>Frameworks</h1></section><section class="slide level2">
-
-<blockquote>
-<p>Any discussion of modern web design invariably comes around to the fact that all websites look more or less the same. The chief culprit behind these “identikit” websites are frameworks—Bootstrap ( http://bkaprt.com/ncl/02-12/ ) and Foundation ( http://bkaprt.com/ncl/02-13/ ) being key players. These incredibly successful projects enable designers to quickly develop sites with minimal front-end knowledge. <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 21)</span></p>
-</blockquote>
-<blockquote>
-<p>But if all your front-end development is in your preferred framework, how long will it be until you can’t remember how to sit down in front of a text editor and build a layout from scratch? How do you find out about new approaches and new specifications? <span class="citation" data-cites="andrew2017">(Andrew, <a href="#/ref-andrew2017">2017</a>, p. 25)</span></p>
-</blockquote>
 </section></section>
 <section><section id="the-new-layout" class="titleslide slide level1"><h1>The New Layout</h1></section><section id="methods-for-positioning-items-in-css." class="slide level2">
 <h2>methods for positioning items in CSS.</h2>
@@ -732,7 +738,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>play in an environment like CodePen or JS Bin.</p>
 </blockquote>
 <p>November 14, 2017 103</p>
-<p>--&gt;</p>
 <div id="refs" class="references">
 <div id="ref-andrew2017">
 <p>Andrew, R. (2017). <em>The New CSS Layout</em>. New York. Retrieved from <a href="https://abookapart.com/products/the-new-css-layout" class="uri">https://abookapart.com/products/the-new-css-layout</a></p>
