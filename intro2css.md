@@ -1735,3 +1735,12 @@ November 14, 2017
 	103
 
 
+# Reference
+
+---
+
+[CSS | MDN](https://developer.mozilla.org/de/docs/Web/CSS)
+
+[Introduction to CSS](https://heinzwittenbrink.github.io/slides-intro2css/)
+
+[CSS (Cascading Stylesheets) - Webkompetenz](http://webkompetenz.wikidot.com/html-handbuch:css)
