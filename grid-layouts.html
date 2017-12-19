@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Heinz Wittenbrink">
+  <meta name="dcterms.date" content="2017-11-25">
+  <title>Grid layouts with frameworks or with CSS grid</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Grid layouts with frameworks or with CSS grid</h1>
+  <p class="author">Heinz Wittenbrink</p>
+  <p class="date">2017-11-25</p>
+</section>
+
+<section id="concepts" class="slide level1">
+<h1>Concepts</h1>
+<ul>
+<li>Separation of content and layout</li>
+<li>Progressive enhancement</li>
+</ul>
+</section>
+<section id="what-is-a-grid-layout" class="slide level1">
+<h1>What is a grid layout?</h1>
+<ul>
+<li>Display of content in a number of rows and columns</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<blockquote>
+<p>Unlike Flexible Box Layout, which is single-axis–oriented, Grid Layout is optimized for 2-dimensional layouts: those in which alignment of content is desired in both dimensions. (<a href="https://www.w3.org/TR/css-grid-1/" title="CSS Grid Layout Module Level 1">CSS Grid Layout Module Level 1</a>)</p>
+</blockquote>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="https://www.w3.org/TR/css-grid-1/images/flex-layout.png" alt="Exemplary Flex Layout Example" /><figcaption>Exemplary Flex Layout Example</figcaption>
+</figure>
+<figure>
+<img src="https://www.w3.org/TR/css-grid-1/images/grid-layout.png" alt="Exemplary Grid Layout Example" /><figcaption>Exemplary Grid Layout Example</figcaption>
+</figure>
+<p class="copyright" data-fill-with="copyright">
+<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.
+</p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="pics/stallman_grid.png" style="width:40.0%" />
+</figure>
+<p>Rechte: <a href="https://www.flickr.com/photos/the-cv-inn/" title="The CV Inn | Flickr">The CV Inn | Flickr</a> https://creativecommons.org/licenses/by/2.0/</p>
+</section>
+<section id="responsive-grids" class="slide level1">
+<h1>Responsive grids</h1>
+<ul>
+<li>Number and width of columns and rows depend on screen size</li>
+<li>Content has to be flexibly arranged</li>
+</ul>
+</section>
+<section id="grid-layouts-without-css-grid" class="slide level1">
+<h1>Grid Layouts without CSS grid</h1>
+</section>
+<section id="bootstrap-as-example" class="slide level1">
+<h1>Bootstrap as example</h1>
+<ul>
+<li><p><a href="https://getbootstrap.com/docs/4.0/layout/grid/" title="Grid system · Bootstrap">Grid system · Bootstrap</a></p></li>
+<li><p>Example: <a href="https://dzone.com/articles/working-with-bootstrap-4-grid-system-for-creating" title="Working With Bootstrap 4 Grid System for Creating Responsive Layouts - DZone Mobile">Working With Bootstrap 4 Grid System for Creating Responsive Layouts</a></p></li>
+<li><p><a href="https://v4-alpha.getbootstrap.com/getting-started/javascript/" title="JavaScript · Bootstrap">JavaScript · Bootstrap</a></p></li>
+</ul>
+</section>
+<section id="other-grid-systems" class="slide level1">
+<h1>Other grid systems</h1>
+<p><a href="https://blog.prototypr.io/9-best-grid-system-for-web-mobile-ui-265c68d30c09" title="9 best grid system for web/mobile UI – Prototypr">9 best grid system for web/mobile UI – Prototypr</a></p>
+</section>
+<section id="css-grid" class="slide level1">
+<h1>CSS grid</h1>
+<figure>
+<img src="https://www.w3.org/TR/css-grid-1/images/game-smaller.png" alt="Five grid items arranged according to content size and available space." /><figcaption>Five grid items arranged according to content size and available space.</figcaption>
+</figure>
+<p class="copyright" data-fill-with="copyright">
+<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.
+</p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="https://www.w3.org/TR/css-grid-1/images/game-larger.png" alt="Growth in the grid due to an increase in available space." /><figcaption>Growth in the grid due to an increase in available space.</figcaption>
+</figure>
+<p class="copyright" data-fill-with="copyright">
+<a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.
+</p>
+</section>
+<section class="slide level1">
+
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">/**
+ * Define the space for each grid item by declaring the grid
+ * on the grid container.
+ */
+#grid {
+  /**
+   * Two columns:
+   *  1. the first sized to content,
+   *  2. the second receives the remaining space
+   *     (but is never smaller than the minimum size of the board
+   *     or the game controls, which occupy this column [Figure 3])
+   *
+   * Three rows:
+   *  3. the first sized to content,
+   *  4. the middle row receives the remaining space
+   *     (but is never smaller than the minimum height
+   *      of the board or stats areas)
+   *  5. the last sized to content.
+   */
+  display: grid;
+  grid-template-columns:
+    /* 1 */ auto
+    /* 2 */ 1fr;
+  grid-template-rows:
+    /* 3 */ auto
+    /* 4 */ 1fr
+    /* 5 */ auto;
+}
+
+/* Specify the position of each grid item using coordinates on
+ * the &#39;grid-row&#39; and &#39;grid-column&#39; properties of each grid item.
+ */
+#title    { grid-column: 1; grid-row: 1; }
+#score    { grid-column: 1; grid-row: 3; }
+#stats    { grid-column: 1; grid-row: 2; align-self: start; }
+#board    { grid-column: 2; grid-row: 1 / span 2; }
+#controls { grid-column: 2; grid-row: 3; justify-self: center; }
+<span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;grid&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;title&quot;</span><span class="kw">&gt;</span>Game Title<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;score&quot;</span><span class="kw">&gt;</span>Score<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;stats&quot;</span><span class="kw">&gt;</span>Stats<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;board&quot;</span><span class="kw">&gt;</span>Board<span class="kw">&lt;/div&gt;</span>
+  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;controls&quot;</span><span class="kw">&gt;</span>Controls<span class="kw">&lt;/div&gt;</span>
+<span class="kw">&lt;/div&gt;</span></code></pre></div>
+<p><a href="https://www.w3.org/TR/css-grid-1/#adapting-to-available-space" title="CSS Grid Layout Module Level 1">CSS Grid Layout Module Level 1: Adapting Layouts to Available Space</a></p>
+</section>
+<section id="advantages-of-css-grid" class="slide level1">
+<h1>Advantages of CSS grid</h1>
+</section>
+<section id="content" class="slide level1">
+<h1>Content:</h1>
+<ul>
+<li>Separation of content markup and presentation</li>
+<li>Accessibility</li>
+</ul>
+</section>
+<section id="design" class="slide level1">
+<h1>Design:</h1>
+<ul>
+<li>Greater flexibility</li>
+<li>Less dependency on frameworks</li>
+<li>Increased variability</li>
+</ul>
+</section>
+<section id="code" class="slide level1">
+<h1>Code:</h1>
+<ul>
+<li>Less code</li>
+<li>Easier code</li>
+<li>Reduced download times</li>
+</ul>
+</section>
+<section id="progressive-enhancement" class="slide level1">
+<h1>Progressive enhancement</h1>
+<blockquote>
+<p>Progressive enhancement [starts] ... by establishing a basic level of user experience that all browsers will be able to provide when rendering your web site, but you also build in more advanced functionality that will automatically be available to browsers that can use it.</p>
+</blockquote>
+</section>
+<section class="slide level1">
+
+<blockquote>
+<p>At its heart, the progressive enhancement approach prioritises the needs of people, regardless of their technology. Tools, frameworks, and code libraries, on the other hand, are often built to prioritise the needs of designers and developers.</p>
+</blockquote>
+<p><a href="https://resilientwebdesign.com/chapter7/" title="Resilient Web Design—Chapter 7">Resilient Web Design—Chapter 7</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
