@@ -51,6 +51,16 @@ Source: [File:CSS3 taxonomy and status-v2.png - Wikimedia Commons](https://commo
 
 Rights: Wikimedia/Krauss [Creative Commons — Attribution-ShareAlike 4.0 International — CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
+# Introductions
+
+---
+
+[CSS | MDN](https://developer.mozilla.org/de/docs/Web/CSS)
+
+[Introduction to CSS](https://heinzwittenbrink.github.io/slides-intro2css/)
+
+[CSS (Cascading Stylesheets) - Webkompetenz](http://webkompetenz.wikidot.com/html-handbuch:css)
+
 # Stylesheets with CSS
 
 ## CSS as a language for presentation
@@ -1735,12 +1745,4 @@ November 14, 2017
 	103
 
 
-# Reference
 
----
-
-[CSS | MDN](https://developer.mozilla.org/de/docs/Web/CSS)
-
-[Introduction to CSS](https://heinzwittenbrink.github.io/slides-intro2css/)
-
-[CSS (Cascading Stylesheets) - Webkompetenz](http://webkompetenz.wikidot.com/html-handbuch:css)
